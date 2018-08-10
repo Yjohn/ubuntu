@@ -14,8 +14,13 @@ const getUsers = () => {
   return knex.select().from("users");
 };
 
+const getAddresses = () => {
+  return knex.select().from("addresses");
+};
+
 module.exports = {
   getStatus: getStatus,
   getUsers: getUsers,
+  getAddresses: getAddresses,
   getShelters: getShelters
 };
